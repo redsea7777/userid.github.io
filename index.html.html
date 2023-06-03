@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kim Ji-Min</title>
+    </head>
+    <meta name="viewport" content="user-scale=yes, initial-scale=1">
+    <style>
+        body{width:80%; margin:15px auto;}
+        #MenuSpace{overflow: hidden; margin-right:0.5%; margin-left:0.5%}
+        .MENU{float:left; width:33%; 
+            background-color: black; color:white; text-align: center;
+        text-shadow: white; font-size:small; border-radius: 10px;}
+        #BigTitle{font-weight: 700;}
+        .content{display:none; margin-top:15px; position: absolute;
+            width:75%; margin-left: 2.5%; margin-right: 2.5%;
+        }
+        .display{display:block}
+        td, th{height:40px}
+        @media screen and (max-width:600px){
+            body{width: 100%; margin:15px;}
+            .content{width:90%; margin-top:10px; position: absolute;}
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            var page = 0;
+            $("#MENUHOME").click(function() {
+                if (page != 0){
+                    $(page).toggleClass('display')
+                }
+                page = "#HomeContent"
+                $("#HomeContent").toggleClass('display')});
+            $("#MENU1").click(function() {
+                if (page != 0){
+                    $(page).toggleClass('display')
+                }
+                page = "#A"
+                $("#A").toggleClass('display')});
+            $("#MENU2").click(function() {
+                if (page != 0){
+                    $(page).toggleClass('display')
+                }
+                page = "#B"
+                $("#B").toggleClass('display')});
+        });
+    </script>
+    <body>
+        <h1 id="BigTitle">Jimin Kim</h1>
+        <div id="MenuSpace">
+            <div id="MENUHOME" class="MENU">HOME</div>
+            <div id="MENU1" class="MENU">성적 및 교과목</div>
+            <div id="MENU2" class="MENU">기타 사항</div>
+        </div>
+        <div id="HomeContent" class="content">
+            <div style="width:100%; text-align: center;">
+            <img src="http://placehold.it/100x100" width="50%">
+            </div>
+            <div style="width:100%;">
+                <hr>
+                <p>
+                안녕하세요. 
+                저는 현재 강원대학교 컴퓨터공학과에 재학중인 김지민이라고 합니다.
+                대학교에서 원하는 학과를 다니며 여러 전공들을 배우고 있습니다.
+                아직 많은 것들을 경험하지는 못하였지만 점차 저의 페이지를 채워나가고자 합니다.
+                일단은 그동안의 저의 대해서 여러분들께 나누려합니다.
+                저의 페이지를 방문해주셔서 감사합니다.
+                </p>
+            </div>
+        </div>
+        <div id="A"class="content">
+            <div>
+            <h3>성적</h3>
+            <hr>
+            <table border="1px"; style="width:100%; text-align: center;">
+                <tr>
+                    <th>과목명</th>
+                    <th>학점</th>
+                    <th>평균</th>
+                </tr>
+                <tr>
+                    <th colspan="3">1학기</th>
+                </tr>
+                <tr>
+                    <td>컴퓨터 개론</td>
+                    <td>A+</td>
+                    <td rowspan="6">4.3</td>
+                </tr>
+                <tr>
+                    <td>학술적 글쓰기</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>기본 영어(읽기 쓰기)</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>자바 프로그래밍1</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>파이썬 이해와 활용</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>진로탐색과 꿈설계</td>
+                    <td>가부제</td>
+                </tr>
+                <tr>
+                    <th colspan="3">2학기</th>
+                </tr>
+                <tr>
+                    <td>기본영어(듣기말하기)</td>
+                    <td>A+</td>
+                    <td rowspan="6">4.2</td>
+                </tr>
+                <tr>
+                    <td>유럽명작읽기</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>지혜와 덕성의 철학</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>자바프로그래밍2</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>C프로그래밍</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>컴퓨팅사고력</td>
+                    <td>가부제</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <div id="B"class="content">
+            <h3>취미</h3>
+            <hr>
+            <ul>
+                <li>피아노 음악 듣기</li>
+                <li>비오는 날에 산책하기</li>
+            </ul>
+            <br>
+            <h3>진로</h3>
+            <hr>
+            <a>
+            저는 중학교 때부터 IT분야에 흥미가 있었고 고등학교 때에는 컴퓨터공학과나 소프트웨어학과에 진학하기를 희망하였습니다.
+            진로가 이미 확실하였기 때문에 학생부 종합전형도 노릴 겸 고등학교 때 할 수 있는 IT관련 활동에 많이 참여하였습니다.
+            수강형 강좌 수업으로 아두이노를 배우기도 하고, 교내 삼성산학연계프로젝트에 참가해 파이썬 등을 익히거나 꿈의 대학 프로그램으로 직접 대학교에 가서 C언어를 배우기도 하였습니다.
+            이러한 활동들을 통해 전공 관련 내용에 대해 미리 접해보고 진로를 확고히 할 수 있었습니다.
+            원하던 학과에 진학한 지금, 실제로 대학교에서 면밀히 공부를 해보니 생각보다 어려움이 많았고 제가 미처 생각하지 못한 부분도 있었습니다.
+            하지만 저는 이 학과에 온 것을 후회하지는 않으며, 세상에 쉬운 것은 없다는 마음으로 임해나갈 생각입니다.
+            현재는 아직 IT분야로 크게 진로를 잡고 있지만, 그 중에서도 소프트웨어쪽으로 쪽으로 생각하고 있습니다.
+            일단은 아직 2학년 1학기 과정이기에 좀 더 많은 전공과목들을 접해보고 구체적인 진로를 정해볼 생각입니다.
+            </a>
+        </div>
+
+    </body>
+</html>
